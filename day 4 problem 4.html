@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    border: 3px solid rgb(7, 116, 240);
+}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #a11aca;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+.cb {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #ec3427;
+}
+
+.img {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.con {
+  padding: 16px;
+}
+input:focus{
+    border:3px solid rgb(81, 197, 168);
+    outline:none;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  color:rgb(13, 13, 240);
+}
+
+</style>
+</head>
+<body>
+
+<h2 style="text-align: center;">Login Form</h2>
+
+<form >
+  <div class="img">
+    <img src="C:\Users\Personal\Desktop\Images\download (4).jpeg" alt="" class="avatar">
+  </div>
+
+  <div class="con">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cb">Cancel</button>
+    <span class="psw"><a href="#"></a>Forgot password?</a></span>
+  </div>
+</form>
+
+</body>
+</html>
